@@ -1,0 +1,21 @@
+{
+  "name": "SmoothScrolling",
+  "version": "1.0.0",
+  "homepage": "https://github.com/narikei/SmoothScrolling",
+  "authors": [
+    "なりたけいすけ"
+  ],
+  "description": "This can smooth scroll all of the elements in your website. Vertical Scrolling & Horizontal Scrolling is OK.",
+  "main": "smoothscrolling.js",
+  "keywords": [
+    "scroll", "scrolling", "smooth scroll", "Vertical Scrolling", "Horizontal Scrolling", "element scroll", "overflow", "smooth", "fluid"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
