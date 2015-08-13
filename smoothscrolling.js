@@ -1,5 +1,5 @@
 /*
-  SmoothScrolling v1.0.0
+  SmoothScrolling v1.0.1
   This can smooth scroll all of the elements in your website. Vertical Scrolling & Horizontal Scrolling is OK.
   url:https://github.com/narikei/SmoothScrolling
 */
@@ -33,13 +33,13 @@
         }
 
         var update = false
-        if (toLeft && currentPosition.left !== toLeft) {
+        if (toLeft && Math.abs(currentPosition.left - left) > 1) {
           target.scrollLeft = toLeft
           currentPosition.left = toLeft
           update = true
         }
 
-        if (toTop) {
+        if (toTop && Math.abs(currentPosition.top - top) > 1) {
           target.scrollTop = toTop
           currentPosition.top = toTop
           update = true
@@ -47,6 +47,9 @@
 
         if (update && target.getAttribute(scrollLockLabel) == scrollLockKey) {
           scrollTarget()
+        } else {
+          target.scrollLeft = left
+          target.scrollTop = top
         }
       }, 10)
     }
