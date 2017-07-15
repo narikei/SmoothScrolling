@@ -1,5 +1,7 @@
 # SmoothScrolling
 
+[![Bower version](https://badge.fury.io/bo/SmoothScrolling.svg)](https://badge.fury.io/bo/SmoothScrolling)
+
 > This can smooth scroll all of the elements in your website.
 > Vertical Scrolling & Horizontal Scrolling is OK.
 
@@ -11,13 +13,13 @@ bower install SmoothScrolling
 
 ## How to use
 
-###scrolling top
+### scrolling top
 
 ```js
 SmoothScrolling(document.body, 0, 0);
 ```
 
-###elements
+### elements
 Element has "scroll".
 
 ```css
